@@ -1,5 +1,8 @@
 # **NASA Project; Plastic Marine Wreck Classification-Machine Learning Software**
 NASA Project; I Developed Plastic Marine Wreck Classification-Machine Learning Software. Plastic, metal, etc. in this software. various waste and garbage; Classified by seasons, by photos they have, by country, by date (year) and shoreline name, with high accuracy, precision, sharpness and f1 results. The models were carefully prepared and examined one by one. Damages in the data have been corrected and made suitable for artificial intelligence. Some (.dot) files have a high number of megabytes and strings, so (.png) was uploaded unformatted due to my insufficient resources. This software has been prepared by me personally for the NASA Project.
+
+With this project, plastic, metal, etc. found in marine debris. I have provided the classification of derivative wastes according to various parameters (date, country, etc.). The machine learning software I have created works with high accuracy (The highest classification model accuracy rate is about 97%). The project regularizes the irregularity of the various data and solves the complex plastic proportions in which country they occur, in what year.
+
 The values you enter should be (respectively):
 
 
