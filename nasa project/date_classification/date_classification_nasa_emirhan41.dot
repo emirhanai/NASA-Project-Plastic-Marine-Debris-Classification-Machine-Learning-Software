@@ -1,7 +1,6 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
 edge [fontname=helvetica] ;
--1 [label="AI Developer - Emirhan BULUT\nNasa Leveraging AI/ML For Plastic Marine Debris Classification\Artificial Intelligence/Machine Learning Software\nwww.emirhanbulut.com.tr", fillcolor="#e0b0ff"] ;
 0 [label="Glass <= 0.59\ngini = 0.86\nsamples = 2097\nvalue = [299.57, 299.57, 299.57, 299.57, 299.57, 299.57, 299.57]\nclass = Year 4", fillcolor="#ffffff"] ;
 1 [label="Filmed_Plastic_Fragments <= 82.73\ngini = 0.85\nsamples = 1131\nvalue = [119.75, 140.45, 197.57, 205.69, 188.56, 228.62, 269.61]\nclass = Year 7", fillcolor="#fef8fb"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
