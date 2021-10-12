@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import *
 from pandas import DataFrame
-df = pd.read_csv('nasaa.csv')
+df = pd.read_csv('../input/nasa-project-marine-debris-machine-learning/nasaa.csv')
 
 aaa = np.array(DataFrame.drop_duplicates(df[['Season']]))
 bbb = np.array2string(aaa)
@@ -70,12 +70,12 @@ for i in np.arange(1,2,1):
     X_train, X_test, y_train, y_test = train_test_split(X.values, y_n.values, test_size=0.004,
                                                         stratify=None,
                                                         shuffle=True,
-                                                        random_state=16)
+                                                        random_state=62)
 
     model_nasa_emirhan = ExtraTreesClassifier(criterion="gini",
                                               max_depth=None,
                                               max_features="auto",
-                                              random_state=37,
+                                              random_state=120,
                                               n_estimators=26,
                                               n_jobs=-1,
                                               verbose=0,
@@ -95,11 +95,6 @@ for i in np.arange(1,2,1):
     print(f1_score(y_test, pred_nasa, average='weighted'))
 
 print(DataFrame.drop_duplicates(y))
-
-#Survey Type Label = Accuracy Score: 1.0
-#Survey Type Label = Precision Score: 1.0
-#Survey Type Label = Recall Score: 1.0
-#Survey Type Label = F1 Score: 1.0
 
 # feature names are loading..
 
@@ -127,11 +122,11 @@ def save_decision_trees_as_dot(model_nasa_emirhan,feature_name, iteration):
     print("Extra Trees in forest :) {} saved as dot file".format(iteration + 1))
 
  # Crate of tree graph about of text classification :))
-for i in range(len(model_nasa_emirhan.estimators_)):
-    save_decision_trees_as_dot(model_nasa_emirhan.estimators_[1],feature_name,i)
-    print(i)
+#for i in range(len(model_nasa_emirhan.estimators_)):
+#    save_decision_trees_as_dot(model_nasa_emirhan.estimators_[1],feature_name,i)
+#    print(i)
 
-#Season Label = Accuracy Score: 0.8974358974358975
-#Season Label = Precision Score: 0.9098865877712031
-#Season Label = Recall Score: 0.8974358974358975
-#Season Label = F1 Score: 0.8973039731660422
+#Season Label = Accuracy Score: 0.8888888888888888 
+#Season Label = Precision Score: 1.0
+#Season Label = Recall Score: 0.8888888888888888
+#Season Label = F1 Score: 0.9333333333333333
